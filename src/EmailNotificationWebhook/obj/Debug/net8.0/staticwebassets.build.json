@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RWZs7DL9B26ZgI9q8qdyNZp+NTEAzQngyN2twlSyxD4=",
+  "Source": "EmailNotificationWebhook",
+  "BasePath": "_content/EmailNotificationWebhook",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
