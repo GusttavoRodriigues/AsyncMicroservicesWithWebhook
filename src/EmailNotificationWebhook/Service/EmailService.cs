@@ -11,16 +11,16 @@ namespace EmailNotificationWebhook.Service
         public string SendEmail(EmailDTO email)
         {
             var _email = new MimeMessage();
-            _email.From.Add(MailboxAddress.Parse("gusttavosilva038@gmail.com"));
-            _email.To.Add(MailboxAddress.Parse("gusttavosilva038@gmail.com"));
+            _email.From.Add(MailboxAddress.Parse(""));
+            _email.To.Add(MailboxAddress.Parse(""));
             _email.Subject = email.Title;
             _email.Body = 
                     new TextPart(MimeKit.Text.TextFormat.Html)
                     { Text = email.Content };
 
             using var smtp = new SmtpClient();
-            smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("gusttavosilva038@gmail.com", "ryeq xqaq bayk cxyb", CancellationToken.None);
+            smtp.Connect("", 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate("", "", CancellationToken.None);
             smtp.Send(_email);
             smtp.Disconnect(true);
 
